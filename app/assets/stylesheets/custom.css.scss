@@ -86,6 +86,13 @@ input {
     margin: 0 0 18px 0;
   }
 }
+/* micropost jQuery countdown */
+
+.countdown {
+  display: inline;
+  padding-left: 10px;
+  color: $grayLight;
+}
 
 .field_with_errors {
   @extend .control-group;
