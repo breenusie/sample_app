@@ -25,7 +25,7 @@ def index
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
     else
-      flash[:error] = "Error, you done fucked up!"
+      flash.now[:error] = "Error, you done messed up!"
       render 'new'
     end
   end
@@ -38,7 +38,7 @@ def index
       flash[:success] = "Profile updated"
       redirect_to @user
     else
-      flash[:error] = "Error, you done fucked up!"
+      flash.now[:error] = "Error, you done messed up!"
       render 'edit'
     end
   end
